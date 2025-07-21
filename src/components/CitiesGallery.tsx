@@ -1,32 +1,37 @@
-import { Link } from 'react-router-dom';
-import { Card, CardContent } from '@/components/ui/card';
-import bukharaImage from '@/assets/bukhara.jpg';
-import samarkandImage from '@/assets/samarkand.jpg';
+import { Link } from "react-router-dom";
+import { Card, CardContent } from "@/components/ui/card";
+import bukharaImage from "@/assets/bukhara.jpg";
+import samarkandImage from "@/assets/samarkand.jpg";
+import khorazm from "@/assets/xorazm.png";
+import Tashkent from "@/assets/Tashkenthero.png";
 
 const cities = [
   {
-    name: 'Bukhara',
-    description: 'The Noble and Holy Bukhara, a living museum of Islamic architecture',
+    name: "Bukhara",
+    description:
+      "The Noble and Holy Bukhara, a living museum of Islamic architecture",
     image: bukharaImage,
-    link: '/bukhara',
+    link: "/bukhara",
   },
   {
-    name: 'Samarkand',
-    description: 'The Crossroads of Cultures, featuring the magnificent Registan Square',
+    name: "Samarkand",
+    description:
+      "The Crossroads of Cultures, featuring the magnificent Registan Square",
     image: samarkandImage,
-    link: '/samarkand',
+    link: "/samarkand",
   },
   {
-    name: 'Tashkent',
-    description: 'The modern capital blending contemporary life with ancient traditions',
-    image: bukharaImage,
-    link: '/tashkent',
+    name: "Tashkent",
+    description:
+      "The modern capital blending contemporary life with ancient traditions",
+    image: Tashkent,
+    link: "/tashkent",
   },
   {
-    name: 'Khiva',
-    description: 'The ancient fortress city preserved in time',
-    image: samarkandImage,
-    link: '/khiva',
+    name: "Khorazm",
+    description: "The ancient fortress city preserved in time",
+    image: khorazm,
+    link: "/khorazm",
   },
 ];
 
@@ -40,7 +45,8 @@ const CitiesGallery = () => {
           </h2>
           <div className="w-24 h-1 bg-uzbek-gold mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Explore the magnificent cities that once served as vital stops along the ancient Silk Road
+            Explore the magnificent cities that once served as vital stops along
+            the ancient Silk Road
           </p>
         </div>
 

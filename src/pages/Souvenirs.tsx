@@ -31,7 +31,7 @@ const souvenirCategories = [
 ];
 
 const Souvenirs = () => {
-  const whatsappNumber = "+1234567890"; // Replace with actual number
+  const whatsappNumber = "+12024982368"; // Replace with actual number
   const whatsappMessage =
     "Hello! I'm interested in authentic Uzbek souvenirs from your collection.";
 

@@ -1,5 +1,6 @@
+import React from "react";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer"; // Agar kerak bo‘lsa
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -7,226 +8,203 @@ import samarkandImage from "@/assets/samarkand.jpg";
 import Header from "../assets/Header.png";
 import Bodey from "../assets/Body.png";
 import FooterI from "../assets/Footer.png";
-import img5 from "../assets/img5.webp";
+import i1 from "../assets/i1.png";
+import i2 from "../assets/i2.png";
+import i3 from "../assets/i3.png";
+import i4 from "../assets/i4.png";
+
 import "../style.css";
-import image4 from "../assets/image4.png";
-import img2 from "../assets/img2.png";
-import img1 from "../assets/img1.png";
+
 const Samarkand = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-black text-gray-900 font-sans">
       <Navigation />
 
-      <div className="flex-1">
-        <table
-          width="100%"
-          style={{ borderCollapse: "collapse", border: 0, padding: 0 }}
-          align="center"
-        >
-          <tbody>
-            <tr>
-              <td style={{ backgroundColor: "#000000" }} height="66">
-                &nbsp;
-              </td>
-              <td
-                width="796"
-                height="66"
-                valign="bottom"
-                style={{
-                  backgroundImage: `url(${Header})`,
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                }}
-              >
-                &nbsp;
-              </td>
-              <td style={{ background: "#000000" }} height="66">
-                &nbsp;
-              </td>
-            </tr>
+      <div className="flex-1 flex flex-col gap-0 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+        {/* Header Section */}
+        <div className="flex justify-center">
+          <div className="bg-black flex-1 h-16 hidden md:block"></div>
+          <div
+            className="w-full max-w-[796px] h-16 bg-no-repeat"
+            style={{
+              backgroundImage: `url(${Header})`,
+              backgroundSize: "100% 100%",
+            }}
+          ></div>
+          <div className="bg-black flex-1 h-16 hidden md:block"></div>
+        </div>
 
-            <tr>
-              <td style={{ background: "#000000" }}>&nbsp;</td>
-              <td
-                style={{
-                  backgroundImage: `url(${Bodey})`,
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                  padding: "20px",
-                }}
-                width="796"
-              >
-                <h1 className="text-red-600 text-2xl text-center font-bold font-[Papyrus]">
-                  Overview of Bukhara's history
-                </h1>
+        {/* Main Content */}
+        <div className="flex justify-center flex-1">
+          <div className="bg-black flex-1 hidden md:block"></div>
+          <div
+            className="w-full max-w-[796px] bg-no-repeat px-4 py-8"
+            style={{
+              backgroundImage: `url(${Bodey})`,
+              backgroundSize: "100% 100%",
+            }}
+          >
+            <div className="mx-auto max-w-prose px-4 sm:px-6">
+              <h3 className="text-center text-red-600 text-xl font-['Papyrus']">
+                Overview of Samarkand's history
+              </h3>
+              <p className="mt-4 text-[#123456] font-['Papyrus',Arial] text-base first-letter:text-2xl first-letter:font-bold">
+                Samarkand is one of the oldest cities in the world, known for
+                its rich history and role along the Silk Road. The city is often
+                called the "Crossroad of Cultures" due to the many civilizations
+                that have passed through it. Samarkand was once the capital of
+                the ancient Sogdian civilization and later became a key city in
+                the Achaemenid Empire under Persian rule. Its strategic location
+                helped it flourish as a center of trade, culture, and science.
+                Most notably, it gained immense prominence in the 14th century
+                when it was chosen as the capital by Amir Temur (Tamerlane), the
+                great conqueror. Under his rule, Samarkand experienced a golden
+                age of architecture and scholarship. The Registan Square,
+                majestic madrassas, and observatories built during this era
+                remain among the city's most iconic landmarks today. The city's
+                atmosphere still echoes the legacy of its vibrant past.
+              </p>
+              <div className="flex justify-center my-4">
+                <img
+                  src={i1}
+                  alt="Bukhara wall"
+                  className="w-full max-w-[394px] h-auto"
+                />
+              </div>
+              <p className="mt-4 text-[#123456] font-['Papyrus',Arial] text-base first-letter:text-2xl first-letter:font-bold">
+                The city has witnessed many ruling powers, including the Arabs,
+                Samanids, Seljuks, and Mongols. After the fall of the Timurid
+                Empire, Samarkand came under the control of the Shaybanids and
+                later became part of the Bukhara Khanate. In 1868, it was
+                conquered by the Russian Empire. During Soviet times, it became
+                part of the Uzbek Soviet Socialist Republic (UzSSR), and since
+                1991 it has been part of the independent Republic of Uzbekistan.
+                Today, Samarkand is a UNESCO World Heritage Site, drawing
+                thousands of visitors every year. It remains a proud symbol of
+                Uzbekistan’s cultural and scientific achievements.
+              </p>
+              <div className="flex justify-center my-4">
+                <img
+                  src={i2}
+                  alt="Bukhara building"
+                  className="w-full max-w-[394px] h-auto"
+                />
+              </div>
+              <p className="mt-4 text-[#123456] font-['Papyrus',Arial] text-base first-letter:text-2xl first-letter:font-bold">
+                The Samarkand region is famous for its diverse production
+                including silk, cotton, fruits, and especially paper made from
+                mulberry bark, which was first introduced during the Chinese
+                influence. Samarkand’s traditional crafts include ceramics, silk
+                weaving, and fine embroidery. The city is also known for its
+                Samarkand bread (non), which is round, golden, and has a special
+                taste and texture unique to the region.
+              </p>
 
-                <blockquote>
-                  <p className="pap">
-                    <b>B</b>ukhara is an ancient oasis city along the fabled
-                    Silk Road and it is said that the sun shines up from the
-                    city for it is so noble. For centuries it was a centre of
-                    trade and Islam, earning the title Bukhoro-i-Sharif, or
-                    "Noble Bukhara" among Muslims (one of the seven holy cities
-                    of Islam). The city itself boasts impressive architecture
-                    and history. It is one of the few places in Central Asia
-                    where one can feel the heartbeat of ancient Central Asia.
-                    Most of the city remains intact and most of the 250,000
-                    inhabitants are members of families who have lived there for
-                    generations upon generations.
-                  </p>
+              <div className="flex justify-center my-4">
+                <img
+                  src={i3}
+                  alt="Bukhara csaray"
+                  className="w-full max-w-[394px] h-auto"
+                />
+              </div>
+              <p className="mt-4 text-[#123456] font-['Papyrus',Arial] text-base first-letter:text-2xl first-letter:font-bold">
+                Many of Samarkand's architectural wonders date from the Timurid
+                dynasty (14th–15th centuries). The Ulugh Beg Madrasah, the
+                Bibi-Khanym Mosque, and Shah-i-Zinda mausoleum complex are among
+                the most admired monuments. Despite the destruction caused by
+                Mongol invasions earlier, Timur rebuilt the city with grand
+                vision and beauty. Ulugh Beg, Timur’s grandson, was also a
+                brilliant astronomer, and his Ulugh Beg Observatory is
+                considered one of the most advanced scientific centers of the
+                medieval Islamic world.
+              </p>
+              <div className="flex justify-center my-4">
+                <img
+                  src={i4}
+                  alt="Bukhara building"
+                  className="w-full max-w-[394px] h-auto"
+                />
+              </div>
+              <p className="mt-4 text-[#123456] font-['Papyrus',Arial] text-base first-letter:text-2xl first-letter:font-bold">
+                Samarkand, like Bukhara, has a long religious history. Before
+                Islam, the region practiced Zoroastrianism and Buddhism. With
+                the Arab conquest, it became a key Islamic center. The city was
+                home to many ethnicities and religious groups, including Jews,
+                who had settled there as early as the Babylonian exile. Even
+                today, traces of Jewish quarters remain, although most Jews
+                emigrated in the late 20th century. Today, Samarkand is a modern
+                city that preserves its historical charm. Visitors are enchanted
+                by its turquoise domes, tilework mosaics, and the peaceful
+                courtyards of madrassas. Samarkand is a symbol of Uzbekistan’s
+                heritage and continues to be a major destination for tourists
+                from around the world.
+              </p>
+            </div>
+          </div>
+          <div className="bg-black flex-1 hidden md:block"></div>
+        </div>
 
-                  <div className="flex justify-center my-4">
-                    <img src={img5} width="394" height="180" alt="img5" />
-                  </div>
-                  <p className="pap">
-                    <b>T</b>he city was founded in the 1st century AD. By the
-                    time of its capture by Arabs in the early 8th century,
-                    Bukhara had become an important trade and cultural center.
-                    It was a leading center of Islamic learning under the Arabs
-                    and the Persian Samanid dynasty, which held the city in the
-                    9th and 10th centuries. It later was captured successively
-                    by the Qarakhanids and Tatars, and in 1555 it became the
-                    capital of an Uzbek emirate. The emirate was conquered in
-                    1866 by Russia, which held it as a protectorate from 1868 to
-                    1920; then the emir was removed, and the city was made the
-                    capital of the Bukhara People's Soviet Republic. From 1924
-                    to 1991 the city was incorporated into the Uzbek Soviet
-                    Socialist Republic (UzSSR). Uzbekistan became an independent
-                    republic in 1991.
-                  </p>
-
-                  <div className="flex justify-center my-4">
-                    <img src={image4} width="394" height="180" alt="img5" />
-                  </div>
-                  <p className="pap">
-                    <b>T</b>he Bukharan region produces natural gas, cotton,
-                    fruit and silk. There is also a textile industry producing
-                    karakul pelts, local
-                    <a href="#" className="linka">
-                      <h1
-                        style={{
-                          fontFamily: "Papyrus, Arial, Helvetica, sans-serif",
-                        }}
-                      >
-                        carpets
-                      </h1>
-                    </a>
-                    and clothing. At the end of the Zarafshan river, Bukhara is
-                    also on the edge of Uzbekistan's agricultural belt and the
-                    large Kyzyl Kum and Kara Kum deserts (Red Sand and Black
-                    Sand deserts).
-                  </p>
-
-                  <p className="pap">
-                    <b>M</b>ost impressive to the foreigner are the buildings
-                    which date to the 9th-10th centuries, and the overall
-                    atmosphere. Unfortunately Ghenghis Khan destroyed most of
-                    the city during his sojourn in the 13th century. The two
-                    buildings he didn't destroy are the Kalyan Minaret (12th
-                    century) and the Ismail Samani mausoleum (9th-10th century).
-                    Perhaps the most famous event form a western point of view
-                    that occurred in Bukhara was the beheading of two British
-                    government agents in 1842 after two years of captivity, much
-                    of which was endured in an insect and rat infested pit at
-                    the city jail, today known as the "Bug Pit". The famous
-                    prison is known by its Tajik name ‘Zindon’ and is located
-                    behind the Ark. The British agents were executed when the
-                    news of the famous defeat of the British garrison in Kabul
-                    reached Bukhara.
-                  </p>
-
-                  <div className="flex justify-center my-4">
-                    <img src={img2} width="394" height="180" alt="img5" />
-                  </div>
-                  <p className="pap">
-                    <b>B</b>uddhism, Zoroastroism and Nestorian Christianity had
-                    been the prevailing religions before conversion to Islam
-                    under Arab conquest. There is also a fascinating history of
-                    the
-                    <a href="#" className="linka">
-                      <h1
-                        style={{
-                          fontFamily: "Papyrus, Arial, Helvetica, sans-serif",
-                        }}
-                      >
-                        Bukharan Jews
-                      </h1>
-                    </a>
-                    who have lived in the city and region since being exiled
-                    during the Babylonian conquest of Israel. Bukhara to this
-                    day contains a Jewish quarter and school although most of
-                    the Jews have emigrated since 1991 to either Israel or the
-                    USA.
-                  </p>
-
-                  <div className="flex justify-center my-4">
-                    <img src={img1} width="394" height="180" alt="img5" />
-                  </div>
-                  <p>
-                    <span className="pap">
-                      <b>F</b>or the visitor, Bukhara is a place to enjoy
-                      authentic Central Asia. Carpets, hats, hand woven silk
-                      fabric, and clear blue sky framed by sandy domes and
-                      minarets are what greet the visitor today. <br />
-                    </span>
-                  </p>
-                </blockquote>
-              </td>
-              <td style={{ backgroundColor: "#000000" }}>&nbsp;</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#000000" }}>&nbsp;</td>
-              <td
-                width="796"
-                height="75"
-                style={{
-                  backgroundImage: `url(${FooterI})`,
-                }}
-                align="center"
-              >
-                .::
-                <a
-                  className="linka"
-                  href="https://www.bukharacity.com/index.htm"
-                >
-                  Home
-                </a>
-                ::. .::
-                <a
-                  className="linka"
-                  href="https://www.bukharacity.com/sorry.htm"
-                >
-                  Arts
-                </a>
-                ::. .::
-                <a
-                  className="linka"
-                  href="https://www.bukharacity.com/jews.htm"
-                >
-                  Bukharan Jews
-                </a>
-                ::. .::<a href="https://ikhtiyor.bukharacity.com/">Carpets</a>
-                ::. .::<a href="https://nazira.bukharacity.com/">Hotel</a>::.
-                .::
-                <a
-                  className="linka"
-                  href="https://www.bukharacity.com/album/album.htm"
-                >
-                  Photo album
-                </a>
-                ::. .::
-                <a
-                  className="linka"
-                  href="https://www.bukharacity.com/travel.htm"
-                >
-                  Travel info
-                </a>
-                ::.
-              </td>
-              <td style={{ backgroundColor: "#000000" }}>&nbsp;</td>
-            </tr>
-          </tbody>
-        </table>
+        {/* Footer Section */}
+        <div className="flex justify-center">
+          <div className="bg-black flex-1 hidden md:block"></div>
+          <div
+            className="w-full max-w-[796px] h-[75px] bg-no-repeat flex justify-center items-center gap-2 px-4 sm:px-6 flex-wrap"
+            style={{
+              backgroundImage: `url(${FooterI})`,
+              backgroundSize: "100% 100%",
+            }}
+          >
+            <Link
+              to="/"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Home
+            </Link>
+            <span className="text-sm">::</span>
+            <Link
+              to="/arts"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Arts
+            </Link>
+            <span className="text-sm">::</span>
+            <Link
+              to="/bukharan-jews"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Bukharan Jews
+            </Link>
+            <span className="text-sm">::</span>
+            <a
+              href="http://ikhtiyor.bukharacity.com/"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Carpets
+            </a>
+            <span className="text-sm">::</span>
+            <a
+              href="http://nazira.bukharacity.com/"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Hotel
+            </a>
+            <span className="text-sm">::</span>
+            <Link
+              to="/photo-album"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Photo album
+            </Link>
+            <span className="text-sm">::</span>
+            <Link
+              to="/travel"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Travel info
+            </Link>
+          </div>
+          <div className="bg-black flex-1 hidden md:block"></div>
+        </div>
       </div>
     </div>
   );
