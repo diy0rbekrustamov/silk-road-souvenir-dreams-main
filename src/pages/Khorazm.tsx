@@ -4,13 +4,23 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import khorazmImage from "@/assets/xorazm.png";
+import Header from "../assets/Header.png";
+import Bodey from "../assets/Body.png";
+import FooterI from "../assets/Footer.png";
+// Importing images for the Khorazm page
+import i5 from "../assets/i5.png";
+import i6 from "../assets/i6.png";
+import i7 from "../assets/i7.png";
+import i8 from "../assets/i8.png";
+
+// Khorazm component
 
 const Khorazm = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col bg-black text-gray-900 font-sans">
       <Navigation />
 
-      {/* Hero Section */}
+      {/* Hero Section
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -26,7 +36,7 @@ const Khorazm = () => {
         </div>
       </section>
 
-      {/* Content */}
+      {/* Content 
       <section className="py-16 bg-uzbek-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
@@ -93,7 +103,176 @@ const Khorazm = () => {
         </div>
       </section>
 
-      <Footer />
+      <Footer /> */}
+
+      <div className="flex-1 flex flex-col gap-0 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+        {/* Header Section */}
+        <div className="flex justify-center">
+          <div className="bg-black flex-1 h-16 hidden md:block"></div>
+          <div
+            className="w-full max-w-[796px] h-16 bg-no-repeat"
+            style={{
+              backgroundImage: `url(${Header})`,
+              backgroundSize: "100% 100%",
+            }}
+          ></div>
+          <div className="bg-black flex-1 h-16 hidden md:block"></div>
+        </div>
+
+        {/* Main Content */}
+        <div className="flex justify-center flex-1">
+          <div className="bg-black flex-1 hidden md:block"></div>
+          <div
+            className="w-full max-w-[796px] bg-no-repeat px-4 py-8"
+            style={{
+              backgroundImage: `url(${Bodey})`,
+              backgroundSize: "100% 100%",
+            }}
+          >
+            <div className="mx-auto max-w-prose px-4 sm:px-6">
+              <h3 className="text-center text-red-600 text-xl font-['Papyrus']">
+                Overview of Khorezm's history{" "}
+              </h3>
+              <p className="mt-4 text-[#123456] font-['Papyrus',Arial] text-base first-letter:text-2xl first-letter:font-bold">
+                Khorezm (also spelled Khwarazm) is one of the most ancient
+                regions of Central Asia, located along the lower Amu Darya
+                River. Its history dates back more than 2,500 years and it
+                played a key role in the development of culture, science, and
+                trade in the region. The region was once an independent
+                civilization and home to the Khorezmian Empire, which flourished
+                between the 9th and 13th centuries. The capital cities of
+                ancient Khorezm, such as Toprak-Kala and Kyzyl-Kala, were
+                centers of learning and administration. Khorezm was also known
+                for its advanced irrigation system, which made agriculture
+                possible in the desert environment.
+              </p>
+              <div className="flex justify-center my-4">
+                <img
+                  src={i5}
+                  alt="Bukhara wall"
+                  className="w-full max-w-[394px] h-auto"
+                />
+              </div>
+              <p className="mt-4 text-[#123456] font-['Papyrus',Arial] text-base first-letter:text-2xl first-letter:font-bold">
+                The region faced a turning point in the 13th century when it was
+                devastated by Genghis Khan’s Mongol invasion, leading to the
+                fall of the Khorezmian Empire. Later, the region came under the
+                control of Timurids, then Shaybanids, and eventually became part
+                of the Khanate of Khiva, centered in the city of Khiva. In the
+                19th century, Khiva became a protectorate of the Russian Empire,
+                and during the Soviet era, it was part of the Uzbek SSR. Since
+                Uzbekistan’s independence in 1991, Khorezm Region has been an
+                important part of the country, with Khiva recognized as a UNESCO
+                World Heritage Site.
+              </p>
+              <div className="flex justify-center my-4">
+                <img
+                  src={i6}
+                  alt="Bukhara building"
+                  className="w-full max-w-[394px] h-auto"
+                />
+              </div>
+              <p className="mt-4 text-[#123456] font-['Papyrus',Arial] text-base first-letter:text-2xl first-letter:font-bold">
+                Today, Khorezm is known for its unique culture, music, dance,
+                and traditional clothing. The region’s people are famous for
+                lazgi – a fast-paced, energetic traditional dance that is
+                recognized by UNESCO as intangible cultural heritage. The
+                Khorezm dialect of Uzbek also differs slightly from the
+                standard, reflecting the region’s deep-rooted identity.
+              </p>
+
+              <div className="flex justify-center my-4">
+                <img
+                  src={i7}
+                  alt="Bukhara csaray"
+                  className="w-full max-w-[394px] h-auto"
+                />
+              </div>
+              <p className="mt-4 text-[#123456] font-['Papyrus',Arial] text-base first-letter:text-2xl first-letter:font-bold">
+                Khiva, the heart of modern-day Khorezm, is an open-air museum
+                city. Its Ichan Qala (Inner Fortress) is home to beautifully
+                preserved madrasahs, mosques, palaces, and minarets from the
+                18th and 19th centuries. Some of the most famous sites include
+                the Kalta Minor, Juma Mosque, and Kunya Ark. Tourists who visit
+                Khorezm are amazed by the hospitality, colorful bazaars,
+                handwoven carpets, and traditional cuisine like shivit oshi
+                (green noodle dish). It’s a place where ancient history meets
+                vibrant modern culture.
+              </p>
+              <div className="flex justify-center my-4">
+                <img
+                  src={i8}
+                  alt="Bukhara building"
+                  className="w-full max-w-[394px] h-auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="bg-black flex-1 hidden md:block"></div>
+        </div>
+
+        {/* Footer Section */}
+        <div className="flex justify-center">
+          <div className="bg-black flex-1 hidden md:block"></div>
+          <div
+            className="w-full max-w-[796px] h-[75px] bg-no-repeat flex justify-center items-center gap-2 px-4 sm:px-6 flex-wrap"
+            style={{
+              backgroundImage: `url(${FooterI})`,
+              backgroundSize: "100% 100%",
+            }}
+          >
+            <Link
+              to="/"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Home
+            </Link>
+            <span className="text-sm">::</span>
+            <Link
+              to="/arts"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Arts
+            </Link>
+            <span className="text-sm">::</span>
+            <Link
+              to="/bukharan-jews"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Bukharan Jews
+            </Link>
+            <span className="text-sm">::</span>
+            <a
+              href="http://ikhtiyor.bukharacity.com/"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Carpets
+            </a>
+            <span className="text-sm">::</span>
+            <a
+              href="http://nazira.bukharacity.com/"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Hotel
+            </a>
+            <span className="text-sm">::</span>
+            <Link
+              to="/photo-album"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Photo album
+            </Link>
+            <span className="text-sm">::</span>
+            <Link
+              to="/travel"
+              className="font-['Lucida_Sans_Unicode',Arial] text-sm text-[#f15555] hover:text-red-600 hover:underline"
+            >
+              Travel info
+            </Link>
+          </div>
+          <div className="bg-black flex-1 hidden md:block"></div>
+        </div>
+      </div>
     </div>
   );
 };
