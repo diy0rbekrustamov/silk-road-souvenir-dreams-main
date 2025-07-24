@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import bukharaImage from "@/assets/bukhara.jpg";
 import Header from "../assets/Header.png";
 import Bodey from "../assets/Body.png";
@@ -11,7 +11,15 @@ import img5 from "../assets/img5.webp";
 import image4 from "../assets/image4.png";
 import img2 from "../assets/img2.png";
 import img1 from "../assets/img1.png";
+import { useEffect } from "react";
 const Bukhara = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, [pathname]);
   return (
     <div className="min-h-screen flex flex-col bg-black text-gray-900 font-sans">
       <Navigation />

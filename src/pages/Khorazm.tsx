@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import khorazmImage from "@/assets/xorazm.png";
 import Header from "../assets/Header.png";
 import Bodey from "../assets/Body.png";
@@ -12,10 +12,18 @@ import i5 from "../assets/i5.png";
 import i6 from "../assets/i6.png";
 import i7 from "../assets/i7.png";
 import i8 from "../assets/i8.png";
+import { useEffect } from "react";
 
 // Khorazm component
 
 const Khorazm = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, [pathname]);
   return (
     <div className="min-h-screen flex flex-col bg-black text-gray-900 font-sans">
       <Navigation />

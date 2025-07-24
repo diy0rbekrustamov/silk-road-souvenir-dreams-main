@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import samarkandImage from "@/assets/samarkand.jpg";
 import Header from "../assets/Header.png";
 import Bodey from "../assets/Body.png";
@@ -16,6 +16,13 @@ import i4 from "../assets/i4.png";
 import "../style.css";
 
 const Samarkand = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, [pathname]);
   return (
     <div className="min-h-screen flex flex-col bg-black text-gray-900 font-sans">
       <Navigation />

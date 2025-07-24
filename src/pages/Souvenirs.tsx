@@ -3,12 +3,13 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MessageCircle, ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import souvenirsImage from "@/assets/souvenirs.jpg";
 
 import carpet from "../assets/carpet.png";
 import plate from "../assets/plate.png";
 import metal from "../assets/metal.png";
+import { useEffect } from "react";
 const souvenirCategories = [
   {
     title: "Traditional Ceramics",
@@ -31,6 +32,13 @@ const souvenirCategories = [
 ];
 
 const Souvenirs = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, [pathname]);
   const whatsappNumber = "+12024982368"; // Replace with actual number
   const whatsappMessage =
     "Hello! I'm interested in authentic Uzbek souvenirs from your collection.";
