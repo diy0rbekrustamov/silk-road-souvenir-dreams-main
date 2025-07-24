@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import tashkentImage from "@/assets/Tashkenthero.png";
+import tashkentImage from "../assets/Tashkenthero.png";
 import { useEffect } from "react";
 
 const Tashkent = () => {

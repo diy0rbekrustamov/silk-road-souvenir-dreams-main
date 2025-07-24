@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
-import bukharaImage from "@/assets/bukhara.jpg";
-import samarkandImage from "@/assets/samarkand.jpg";
-import khorazm from "@/assets/xorazm.png";
-import Tashkent from "@/assets/Tashkenthero.png";
+import bukharaImage from "../assets/bukhara.jpg";
+import samarkandImage from "../assets/samarkand.jpg";
+import khorazm from "../assets/xorazm.png";
+import Tashkent from "../assets/Tashkenthero.png";
 
 const cities = [
   {

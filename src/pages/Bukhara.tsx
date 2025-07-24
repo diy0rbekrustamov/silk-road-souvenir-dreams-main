@@ -1,17 +1,13 @@
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import bukharaImage from "@/assets/bukhara.jpg";
-import Header from "../assets/Header.png";
 import Bodey from "../assets/Body.png";
 import FooterI from "../assets/Footer.png";
-import img5 from "../assets/img5.webp";
+import Header from "../assets/Header.png";
 import image4 from "../assets/image4.png";
-import img2 from "../assets/img2.png";
 import img1 from "../assets/img1.png";
-import { useEffect } from "react";
+import img2 from "../assets/img2.png";
+import img5 from "../assets/img5.webp";
 const Bukhara = () => {
   const { pathname } = useLocation();
 

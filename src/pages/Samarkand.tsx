@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import samarkandImage from "@/assets/samarkand.jpg";
 import Header from "../assets/Header.png";
 import Bodey from "../assets/Body.png";
 import FooterI from "../assets/Footer.png";

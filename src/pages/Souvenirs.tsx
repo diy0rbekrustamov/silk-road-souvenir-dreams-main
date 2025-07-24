@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MessageCircle, ArrowLeft } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import souvenirsImage from "@/assets/souvenirs.jpg";
+import souvenirsImage from "../assets/souvenirs.jpg";
 
 import carpet from "../assets/carpet.png";
 import plate from "../assets/plate.png";

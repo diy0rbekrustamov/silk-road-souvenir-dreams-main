@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
-import uzbekistanHero from "@/assets/uzbekistan-hero.jpg";
+import uzbekistanHero from "../assets/uzbekistan-hero.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
